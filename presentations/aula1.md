@@ -76,17 +76,17 @@ Qual o desafio? Aprender linguagens funcionais do zero, ao mesmo tempo em que s�
 
 O esperado é que em 6 meses, todos possam estar programando na HVM com propriedade, e desenvolvendo os mais variados sistemas.
 
-Inicialmente as aulas serão dadas com objetivo de treinar a turma, contúdo a intenção é que as aulas sejam reaproveitadas para que mais na frente, qualquer um da comunidade que se interessar pelo projeto, possa ver os vídeos e aprender. Inclusive facilitar a criação de documentação. Então dêem feedbacks para fazermos aulas cada vez melhores
+Inicialmente as aulas serão dadas com objetivo de treinar a turma, contúdo a intenção é que as aulas sejam reaproveitadas para que mais na frente, qualquer um da comunidade que se interessar pelo projeto, possa ver os vídeos e aprender. Inclusive facilitar a criação de documentação. Então dêem feedbacks para fazermos aulas cada vez melhores.
 
 ---
 
 # Objetivos específicos das aulas
 
-Que a turma consiga ajudar com o repositório prelude
+Que a turma consiga ajudar com o repositório prelude.
 
-Resolver todas as listas de exercícios
+Resolver todas as listas de exercícios.
 
-Desnvolver documentações para kind, kind2 e hvm
+Desenvolver documentações para kind, kind2 e hvm.
 
 
 ---
