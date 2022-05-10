@@ -44,7 +44,7 @@ Como Será
 
 ---
 layout: image-center
-image: 'img/zooko.png'
+image: '/img/zooko.png'
 imageWidth: '900'
 
 ---
