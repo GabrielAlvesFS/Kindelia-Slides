@@ -142,7 +142,7 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 
 ---
 
-# Cronograma de Aulas
+# Cronograma de Aulas (1/3)
 
 ## Módulo: Programação Funcional
 * Semana 1: Bool, Pair, Maybe, Nat.
@@ -156,7 +156,7 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 
 ---
 
-# Cronograma de Aulas
+# Cronograma de Aulas (2/3)
 
 ## Módulo: Verificação Formal
 * Semana 9: Análise de Casos (Bool, Maybe, Pair, Equal)
@@ -170,7 +170,7 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 
 ---
 
-# Cronograma de Aulas
+# Cronograma de Aulas (3/3)
 
 ## Módulo: Lambda Encoding (HVM)
 * Semana 17: Lambda Hacks
