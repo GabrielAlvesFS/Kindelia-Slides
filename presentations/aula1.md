@@ -44,7 +44,7 @@ Como Será
 
 ---
 layout: image-center
-image: '/img/zooko.png'
+image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko.png'
 imageWidth: '900'
 
 ---
