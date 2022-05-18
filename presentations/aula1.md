@@ -1,6 +1,6 @@
 ---
 theme: unicorn
-logoHeader: https://kindelia.org/static/media/kindelia_logo.d41e75d38f4e76bf6eb0b5e63721b8ca.svg
+logoHeader: https://kindelia.org/_next/static/media/kindelia_logo.94d30f0d.svg
 website: 'kindelia.org'
 handle: 'kindelia'
 class: text-center
