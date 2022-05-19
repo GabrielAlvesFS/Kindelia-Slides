@@ -1,9 +1,16 @@
 ---
-theme: unicorn
-logoHeader: https://kindelia.org/_next/static/media/kindelia_logo.94d30f0d.svg
-website: 'kindelia.org'
-handle: 'kindelia'
+theme: seriph
+background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
+highlighter: shiki
+lineNumbers: false
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
+drawings:
+  persist: false
 title: Kindelia University
 ---
 
