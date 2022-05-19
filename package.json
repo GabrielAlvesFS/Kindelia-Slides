@@ -1,4 +1,5 @@
 {
+  "name": "slides2",
   "private": true,
   "scripts": {
     "build": "./slidev.sh build",
@@ -6,15 +7,8 @@
     "export": "./slidev.sh export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.30.3",
+    "@slidev/cli": "^0.31.4",
     "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "^0.21.2",
-    "playwright-chromium": "^1.21.1",
-    "slidev-theme-penguin": "^1.4.0",
-    "slidev-theme-unicorn": "^1.1.0"
-  },
-  "name": "slides",
-  "devDependencies": {
-    "@iconify-json/logos": "^1.1.5"
+    "@slidev/theme-seriph": "*"
   }
 }

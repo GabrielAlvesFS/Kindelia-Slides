@@ -1,9 +1,16 @@
 ---
-theme: unicorn
-logoHeader: https://kindelia.org/static/media/kindelia_logo.d41e75d38f4e76bf6eb0b5e63721b8ca.svg
-website: 'kindelia.org'
-handle: 'kindelia'
+theme: seriph
+background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-center
+highlighter: shiki
+lineNumbers: false
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
+drawings:
+  persist: false
 title: Kindelia University
 ---
 
@@ -13,8 +20,7 @@ Como Será
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Pressione Espaço para passar
-     <carbon:arrow-right class="inline"/>
+    Pressione Espaço para passar<carbon:arrow-right class="inline"/>
   </span>
 </div>
 
@@ -42,12 +48,8 @@ Como Será
 - Segurança  → [Kind](https://github.com/Kindelia/Kind): Linguagens de programação com provas formais.
 
 
----
-layout: image-center
 image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko.png'
-imageWidth: '900'
 
----
 
 ---
 
