@@ -3,11 +3,11 @@
 case "$1" in
   build)
     for i in $(ls presentations/*.md | sed 's/presentations\/\|\.md//g') 
-      do slidev build ./presentations/$i.md -d --base /slides/$i/ --out ../dist/$i/
+      do slidev build ./presentations/$i.md -d --base /slides/$i/ --out ../dist/$i/ --timeout 1000000
     done
   ;;
   dev)
-  slidev --open ./presentations/$2.md
+  slidev --open ./presentations/$2.md 
   # "${@:2}"
   ;;
   export)
