@@ -12,7 +12,9 @@ info: |
 drawings:
   persist: false
 title: Kindelia University
+hideInToc: true
 ---
+
 
 # Introdução ao Kind
  
@@ -36,57 +38,149 @@ Kindelia University
   </a>
 </div>
 
+---
+hideInToc: true
+---
+
+# O que irá aprender nesta aula
+
+<Toc columns="1" />
 
 ---
 
-# Como funcionam as linguagens funcionais
+# Objetivo com o Kind
+A linguagem Kind deve ser extremamente:
 
-Na linguagem funcional o desenvolvimento é feito com base em resultados de funções e a programação é feita com expressões, como se as funções fossem os objetos.  
+* ##  **Eficiente**. 
 
-O valor de saída depende apenas dos argumentos de entrada, logo, não importa o ambiente ou cenário em que o sistema esteja inserido, o resultado da saída é sempre o mesmo para os mesmos argumentos de entrada.
+ Ou seja, **rápida** e com baixo custo de **processamento**.
 
-Essa programação é focada na imutabilidade de estado, já que as funções apresentam o mesmo valor e comportamento durante todo o processo.
+* ## **Confiável**. 
 
----
-
-# Por que precisamos de uma linguagem funcional?
-
-
-* Fácil manutenção;
-* Facilidade nos testes e na busca por bugs;
-* Processamento em paralelo (divide uma tarefa em suas partes independentes e na execução de cada uma destas partes em diferentes processadores.)
-* Muitos programas escritos em programação imperativa são enormes e escritos em programação funcional eles ficam pequenos e simplificados.
+Não deve haver falhas de segurança.
 
 ---
 
-# O que é o Kind?
 
-* Uma linguagem de programação mínima, eficiente e prática que visa repensar a programação funcional do zero e torná-la correta.
-* Semelhante a Haskell, sem erros históricos, e com um design moderno e consistente.   
-* Pretende ser mais prático e parecer mais com linguagens convencionais. Kind é tipado estaticamente, e seus tipos são tão poderosos que você pode provar teoremas matemáticos nele.
+# Por que programação funcional?
+A propriedade da **imutabilidade** nas **funções puras**.
 
----
+Cada entrada de função resulta sempre numa mesma saída. E evita-se ao máximo guardar estados.
 
-# Por que precisamos do Kind? 
-
-
-* Linguagem de provas segura. 
-* Provas formais garantem que um programa não tenha bugs. 
-* O Kind consegue fazer essa tecnologia ser aplicada na blockchain de uma maneira economicamente viável. 
+Tornando-a em relação a programação **imperativa**, mais:
+* **Eficiente**: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento. 
+* **Confiável**: Pode-se usar de **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final costuma ser  mais simples e legível.
 
 ---
 
-# Como instalar/configurar KIND? 
+# O que é programação funcional?
+É um **paradigma de programação** que se baseia na **composição de funções**.
 
+Utiliza-se da **recursão**.
 
- 'https://i.imgur.com/vvh7CXH.png'
-
-
- 'https://i.imgur.com/jZfRqD5.png'
+Possui 2 características muito úteis:
+* **Lazy Evaluation**: Permite criar listas infinitas, o compilador se encarrega de calcular apenas o que será utilizado.
+* Função de alta ordem (**lambdas**): Recebe ou retorna outras funções.
 
 ---
 
-# Divirta-se com o Kind!
+# Exemplo: A função fatorial
+Definição matemática do fatorial.
 
-## ༼ つ ◕_◕ ༽つ
+Definição pelo **produto**:
+
+$$ n! = \prod_{k=1}^{n} k $$
+
+Definição por **recorrência**:
+
+$$ 
+  n!=\begin{cases}
+    1, & \text{if $n=0$},\\
+    (n-1)! \cdot n, & \text{if $n \gt 0$}.
+  \end{cases}
+$$
+
+
+
+---
+layout: two-cols
+hideInToc: true
+---
+
+# C
+Linguagem de programação **imperativa**.
+
+```c
+int factorial (int n){
+  int i, r;
+  i=1;
+  r=1;
+  while (i<=n){
+    r=r*i;
+    i=i+1;
+  }
+  return r
+}
+```
+
+::right::
+
+# Haskell
+Linguagem de programação **funcional**.
+
+```haskell
+fact 0 = 1
+fact n = n *fact (n-1)
+```
+
+---
+
+# Lista de linguagens de programação funcional
+
+* [Haskell](https://www.haskell.org/).
+* [Lua](https://www.lua.org/).
+* [Rust](https://www.rust-lang.org/).
+* [Elixir](https://elixir-lang.org/).
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (*dependendo do uso*).
+
+---
+
+# Por que o Kind?
+O que falta nas linguagens de programação funcionais atuais?
+
+* ### **Lazy evaluation** em funções.
+Tornando o paralelismo extremamente mais **eficiente**.
+
+* ### **Provas formais** nativa.
+Tornando o sistema ultra seguro sem aumentar o custo de processamento.
+---
+
+# Como instalar o Kind
+
+```bash
+sudo npm i -g kind-lang
+```
+
+ou
+
+```bash
+sudo yarn global add kind-lang
+```
+
+
+---
+
+# Origem do nome Kindelia
+Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês)
+
+* ***1*** é do tipo ***nat***; ***True*** é do tipo ***bool***.
+* ***Nat*** e ***bool*** são do tipo [**type**](https://en.wikipedia.org/wiki/Type_constructor).
+* ***Type*** é do tipo [***kind***](https://en.wikipedia.org/wiki/Kind_(type_theory)).
+
+***Kind*** é o tipo de mais alta ordem, dele que surge a palavra **Kindelia**.
+---
+
+# Exercício
+
+* ### Instalar o kind.
 

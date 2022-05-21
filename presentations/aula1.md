@@ -37,6 +37,11 @@ Kindelia University
 
 ---
 
+# Índice
+
+
+---
+
 # O [Kindelia](http://kindelia.org/)
  
  É uma máquina virtual descentralizada equipada com tecnologia blockchain.
@@ -137,8 +142,8 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 # Habilidades e conhecimentos pressupostos
 
 * Lógica de programação e Matemática básica
-* Uso de terminal e editor de texto
-* Instalação de pacotes
+* Uso de terminal (podendo ser wsl) e editor de texto (VS code, NeoVim, Kakoune etc)
+* Instalação de pacotes (apt, pacman, brew, yarn/npm etc)
 * Git
 * O que é e como funciona o bitcoin e o ethereum
 
@@ -202,11 +207,11 @@ layout: center
 
 # Primeiro Exercício
 
-Dar um olhada na [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home),
-no [class](https://github.com/Kindelia/class) e
-no [youtube](https://www.youtube.com/c/Kindelia).
+Dar um olhada na:
 
-Se inscrever no canal, curtir o vídeo e comentar:
+* [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home)
+* [Class](https://github.com/Kindelia/class) 
+* [Slides](https://github.com/Kindelia/slides)
+* [Youtube](https://www.youtube.com/c/Kindelia)
 
-o que achou da abordagem e dar sugestões.
-
+Se inscrever no canal do youtube, curtir o vídeo, comentar e dar sugestões
