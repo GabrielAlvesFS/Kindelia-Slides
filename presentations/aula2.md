@@ -59,6 +59,7 @@ A linguagem Kind deve ser extremamente:
 
 Não deve haver falhas de segurança.
 
+<!-- syntaxe simples codigo enxuto -->
 ---
 
 
@@ -68,8 +69,8 @@ A propriedade da **imutabilidade** nas **funções puras**.
 Cada entrada de função resulta sempre numa mesma saída. E evita-se ao máximo guardar estados.
 
 Tornando-a em relação a programação **imperativa**, mais:
-* **Eficiente**: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento. 
-* **Confiável**: Pode-se usar de **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final costuma ser  mais simples e legível.
+* **Eficiente** em grandes projetos: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento.
+* **Confiável**: Pode-se usar de **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final também costuma ser  mais simples e legível.
 
 ---
 
@@ -79,7 +80,7 @@ Tornando-a em relação a programação **imperativa**, mais:
 Utiliza-se da **recursão**.
 
 Possui 2 características muito úteis:
-* **Lazy Evaluation**: Permite criar listas infinitas, o compilador se encarrega de calcular apenas o que será utilizado.
+* **Lazy Evaluation**: Atrasa a computação até que seja realmente necessário.
 * Função de alta ordem (**lambdas**): Recebe ou retorna outras funções.
 
 ---
@@ -135,7 +136,26 @@ fact n = n *fact (n-1)
 
 ---
 
-# Lista de linguagens de programação funcional
+# Algumas linguagens de programação funcional
+
+
+### Puras
+* [Haskell](https://www.haskell.org/)
+* [PureScript](https://www.purescript.org/)
+* [Elm](https://elm-lang.org/)
+* [Kind](https://github.com/Kindelia/Kind)
+
+Não-puras (orientadas a PF): 
+[MLs](https://en.wikipedia.org/wiki/ML_(programming_language)), 
+[Lisps](https://lisp-lang.org/), 
+[Elixir](https://elixir-lang.org/), 
+[Scala](https://www.scala-lang.org/) etc.
+
+Outras (multiparadigmas): 
+[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), 
+[Python](https://www.python.org/), [Lua](https://www.lua.org/) etc.
+
+---
 
 * [Haskell](https://www.haskell.org/).
 * [Lua](https://www.lua.org/).
@@ -148,11 +168,12 @@ fact n = n *fact (n-1)
 # Por que o Kind?
 O que falta nas linguagens de programação funcionais atuais?
 
-* ### **Lazy evaluation** em funções.
-Tornando o paralelismo extremamente mais **eficiente**.
-
 * ### **Provas formais** nativa.
 Tornando o sistema ultra seguro sem aumentar o custo de processamento.
+
+* ### **Lazy evaluation** em funções (HVM).
+Tornando o paralelismo extremamente mais **eficiente**.
+
 ---
 
 # Como instalar o Kind
@@ -171,6 +192,9 @@ sudo yarn global add kind-lang
 ---
 
 # Origem do nome Kindelia
+<!-- talvez tirar slide -->
+Apenas uma curiosidade
+
 Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês)
 
 * ***1*** é do tipo ***nat***; ***True*** é do tipo ***bool***.
