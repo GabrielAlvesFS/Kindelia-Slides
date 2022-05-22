@@ -14,7 +14,7 @@ drawings:
 title: Kindelia University
 ---
 
-# Booleans
+# Types
 
 Kindelia University
 
