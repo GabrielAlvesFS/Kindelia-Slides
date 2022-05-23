@@ -18,7 +18,7 @@ hideInToc: true
 
 # Introdução ao Kind
  
-Kindelia University 
+Kindelia Foundation 
 
 
 <div class="pt-12">
@@ -42,55 +42,56 @@ Kindelia University
 hideInToc: true
 ---
 
-# O que irá aprender nesta aula
+# O que será ensinado nesta aula
 
 <Toc columns="1" />
 
 ---
 
-# Objetivo com o Kind
-A linguagem Kind deve ser extremamente:
+# Objetivo do Kind
+A linguagem Kind deve possuir:
 
-* ##  **Eficiente**. 
+* ## **Provas formais** nativas 
 
- Ou seja, **rápida** e com baixo custo de **processamento**.
+Com baixo custo de processamento
 
-* ## **Confiável**. 
+* ## **Sintaxe Simples**
+Que facilite o entendimento e criação de aplicações
 
-Não deve haver falhas de segurança.
+* ## **Código fonte enxuto**
+Para clara legibilidade e manutenção do código
 
-<!-- syntaxe simples codigo enxuto -->
+
 ---
 
-
 # Por que programação funcional?
-A propriedade da **imutabilidade** nas **funções puras**.
+A propriedade da **imutabilidade** nas **funções puras**
 
-Cada entrada de função resulta sempre numa mesma saída. E evita-se ao máximo guardar estados.
+Cada entrada de função resulta sempre numa mesma saída, assim, evita-se ao máximo guardar estados.
 
 Tornando-a em relação a programação **imperativa**, mais:
-* **Eficiente** em grandes projetos: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento.
+* **Eficiente** em grandes projetos: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento;
 * **Confiável**: Pode-se usar de **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final também costuma ser  mais simples e legível.
 
 ---
 
 # O que é programação funcional?
-É um **paradigma de programação** que se baseia na **composição de funções**.
+É um **paradigma de programação** que se baseia na **composição de funções**
 
-Utiliza-se da **recursão**.
-
-Possui 2 características muito úteis:
-* **Lazy Evaluation**: Atrasa a computação até que seja realmente necessário.
+Possui 3 características muito úteis:
+* **Recursão**;
+* **Lazy Evaluation**: Atrasa a computação até que seja realmente necessário;
 * Função de alta ordem (**lambdas**): Recebe ou retorna outras funções.
 
 ---
 
 # Exemplo: A função fatorial
-Definição matemática do fatorial.
+Definição matemática do fatorial
 
 Definição pelo **produto**:
 
-$$ n! = \prod_{k=1}^{n} k $$
+$$ n! = 1\cdot 2\cdot 3\cdot ... \cdot(n-2)\cdot(n-1) \cdot n = \prod_{k=1}^{n} k $$
+
 
 Definição por **recorrência**:
 
@@ -109,7 +110,7 @@ hideInToc: true
 ---
 
 # C
-Linguagem de programação **imperativa**.
+Linguagem de programação **imperativa**
 
 ```c
 int factorial (int n){
@@ -127,7 +128,8 @@ int factorial (int n){
 ::right::
 
 # Haskell
-Linguagem de programação **funcional**.
+<!-- colocar em kind -->
+Linguagem de programação **funcional**
 
 ```haskell
 fact 0 = 1
@@ -136,10 +138,10 @@ fact n = n *fact (n-1)
 
 ---
 
-# Algumas linguagens de programação funcional
+# Exemplos de linguagens de programação funcional
 
 
-### Puras
+### Puras:
 * [Haskell](https://www.haskell.org/)
 * [PureScript](https://www.purescript.org/)
 * [Elm](https://elm-lang.org/)
@@ -157,22 +159,20 @@ Outras (multiparadigmas):
 
 ---
 
-* [Haskell](https://www.haskell.org/).
-* [Lua](https://www.lua.org/).
-* [Rust](https://www.rust-lang.org/).
-* [Elixir](https://elixir-lang.org/).
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (*dependendo do uso*).
+# O que falta nas linguagens de programação funcionais atuais?
+Por que criar o kind?
 
----
+Não há nenhuma nenhuma linguagem de programação funcional atualmente que possua todos os requisitos do **kind**,
+e todos são indispensáveis, pois:
 
-# Por que o Kind?
-O que falta nas linguagens de programação funcionais atuais?
+* **Provas formais** nativas: 
+Permitirá que seja provado que o código criado esteja correto, porém não pode aumentar muito o custo de processamento da aplicação;
 
-* ### **Provas formais** nativa.
-Tornando o sistema ultra seguro sem aumentar o custo de processamento.
+* **Sintaxe Simples**: 
+A linguagem precisa ser acessível, para que não fique restrita a meios acadêmicos;
 
-* ### **Lazy evaluation** em funções (HVM).
-Tornando o paralelismo extremamente mais **eficiente**.
+*  **Código fonte enxuto**:
+É necessário para a confiabilidade do código, e permite que seja estendido de acordo com a necessidade.
 
 ---
 
@@ -193,12 +193,12 @@ sudo yarn global add kind-lang
 
 # Origem do nome Kindelia
 <!-- talvez tirar slide -->
-Apenas uma curiosidade
+Curiosidade
 
-Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês)
+Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês):
 
-* ***1*** é do tipo ***nat***; ***True*** é do tipo ***bool***.
-* ***Nat*** e ***bool*** são do tipo [**type**](https://en.wikipedia.org/wiki/Type_constructor).
+* ***1*** é do tipo ***nat***; ***True*** é do tipo ***bool***;
+* ***Nat*** e ***bool*** são do tipo [**type**](https://en.wikipedia.org/wiki/Type_constructor);
 * ***Type*** é do tipo [***kind***](https://en.wikipedia.org/wiki/Kind_(type_theory)).
 
 ***Kind*** é o tipo de mais alta ordem, dele que surge a palavra **Kindelia**.
