@@ -11,12 +11,12 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
-title: Kindelia University
+title: Kindelia Foundation 
 ---
 
 # Sobre as aulas
 
-Kindelia University 
+Kindelia Foundation 
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -36,11 +36,15 @@ Kindelia University
 
 
 ---
+hideInToc: true
+---
 
-# Índice
+# Índice 
 
+<Toc columns="2" />
 
 ---
+
 
 # O [Kindelia](http://kindelia.org/)
  
@@ -52,18 +56,19 @@ Kindelia University
 - Eficiente (Barato e Rápido)  → [HVM](https://github.com/kindelia/hvm): Máquina virtual funcional, paralela e ótima.
 - Segurança  → [Kind](https://github.com/Kindelia/Kind): Linguagens de programação com provas formais.
 
-
+---
+layout: image
 image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko.png'
-
-
+---
+<!-- ajeitar imagem -->
 ---
 
 
-# O que o Kindelia precisa para prevalecer
+# O que o Kindelia precisa para prevalecer?
 
-- Kindelia: Sob controle nas mãos do Taelin
-- HVM: Newcomers e Turma
-- Kind: Newcomers e Turma
+- Kindelia: Sob controle nas mãos do Taelin;
+- HVM: Newcomers e Turma;
+- Kind: Newcomers e Turma;
 - Marketing: Grupo primo e comunidade.
 
 Criação de ecossistema:
@@ -125,6 +130,7 @@ A equipe é formada por:
 * Humberto
 * Jogario
 * Corgan
+* Rafael
 
 Estaremos nos organizando para entrar em contato com a turma, acompanharmos o desenvolvimento e tirarmos as dúvidas de todos.
 
@@ -132,58 +138,59 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 
 # Objetivo dos Monitores 
 
-* Facilitar o aprendizado da turma (reuniões, links)
-* Validar o aprendizado da turma (testes, projetos)
-* Criação de conteúdo que facilite o aprendizado de qualquer um interessado (Wiki, youtube)
-* Estruturação das informações sobre o Kindelia (Github, redes sociais, site)
+* Facilitar o aprendizado da turma (reuniões, links);
+* Validar o aprendizado da turma (testes, projetos);
+* Criação de conteúdo que facilite o aprendizado de qualquer um interessado (Wiki, youtube);
+* Estruturação das informações sobre o Kindelia (Github, redes sociais, site).
 
 ---
 
 # Habilidades e conhecimentos pressupostos
 
-* Lógica de programação e Matemática básica
-* Uso de terminal (podendo ser wsl) e editor de texto (VS code, NeoVim, Kakoune etc)
-* Instalação de pacotes (apt, pacman, brew, yarn/npm etc)
-* Git
-* O que é e como funciona o bitcoin e o ethereum
+* Lógica de programação e Matemática básica;
+* Uso de terminal: Comandos básicos, sudo e [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install) se precisar;
+* Editor de texto: [VSCode](https://code.visualstudio.com/download), [NeoVim](https://neovim.io/), [Kakoune](http://kakoune.org/) etc.
+* Instalação de pacotes: yarn, npm, apt, pacman, brew etc.
+* Git e [ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh);
+* O que é e como funciona o bitcoin e o ethereum.
 
 ---
 
 # Cronograma de Aulas (1/3)
 
 ## Módulo: Programação Funcional
-* Semana 1: Bool, Pair, Maybe, Nat.
-* Semana 2: Int, Bits.
-* Semana 3: List, Char, string.
-* Semana 4: ListMap, BitsMap, PriorityQueue, function.
-* Semana 5: Recursion.
-* Semana 6: Parsing, TypeClass.
-* Semana 7: Monad.
-* Semana 8 Io. -> projeto final: app.
+* Semana 1: Bool, Pair, Maybe, Nat;
+* Semana 2: Int, Bits;
+* Semana 3: List, Char, string;
+* Semana 4: ListMap, BitsMap, PriorityQueue, function;
+* Semana 5: Recursion;
+* Semana 6: Parsing, TypeClass;
+* Semana 7: Monad;
+* Semana 8 Io. -> projeto final: app;
 
 ---
 
 # Cronograma de Aulas (2/3)
 
 ## Módulo: Verificação Formal
-* Semana 9: Análise de Casos (Bool, Maybe, Pair, Equal)
-* Semana 10: Indução Nat
-* Semana 11: Indução Int
-* Semana 12: Indução Bits
-* Semana 13: Tipos dependents
-* Semana 14: Tipos indexados
-* Semana 15: Sigma
-* Semana 16: Prova -> projeto final (1 teorema difícil)
+* Semana 9: Análise de Casos (Bool, Maybe, Pair, Equal);
+* Semana 10: Indução Nat;
+* Semana 11: Indução Int;
+* Semana 12: Indução Bits;
+* Semana 13: Tipos dependents;
+* Semana 14: Tipos indexados;
+* Semana 15: Sigma;
+* Semana 16: Prova -> projeto final (1 teorema difícil);
 
 ---
 
 # Cronograma de Aulas (3/3)
 
 ## Módulo: Lambda Encoding (HVM)
-* Semana 17: Lambda Hacks
-* Semana 18: Scott Encoding
-* Semana 19: Church Encoding
-* Semana 20: Self Encoding
+* Semana 17: Lambda Hacks;
+* Semana 18: Scott Encoding;
+* Semana 19: Church Encoding;
+* Semana 20: Self Encoding;
 
 [Lista com mais detalhes](https://gist.githubusercontent.com/VictorTaelin/9470ee286280e5638107fbcfaf7cdc26/raw/4138a5e504e06a557ce212ce29a5491f56640e3a/gistfile1.txt)
 
@@ -191,27 +198,27 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 
 # Materiais
 
-as aulas ficarão gravadas no [youtube](https://www.youtube.com/c/Kindelia).
+As aulas ficarão gravadas no [youtube](https://www.youtube.com/c/Kindelia).
 
-os slides estão disponíveis no repositório [slides](https://github.com/Kindelia/slides).
+Os slides estão disponíveis no repositório [slides](https://github.com/Kindelia/slides).
 
 Os exercícios no repositório [class](https://github.com/Kindelia/class).
 
 Onde é possível acessar o slide online para revisão, e acessar o código fonte dos slides.
 
-Para quem quiser se aprofundar, no repositório do [prelude](https://github.com/Kindelia/prelude) há uma lista com link para referências, incluindo o livro o okasaki. 
+Para quem quiser se aprofundar, no repositório do [prelude](https://github.com/Kindelia/prelude) há uma lista com link para referências, incluindo o livro do Okasaki. 
 
 ---
 layout: center
 ---
 
-# Primeiro Exercício
+# Exercício
 
-Dar um olhada na:
+Dar um olhada em:
 
-* [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home)
-* [Class](https://github.com/Kindelia/class) 
-* [Slides](https://github.com/Kindelia/slides)
-* [Youtube](https://www.youtube.com/c/Kindelia)
+* [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home);
+* [Class](https://github.com/Kindelia/class);
+* [Slides](https://github.com/Kindelia/slides);
+* [Youtube](https://www.youtube.com/c/Kindelia).
 
-Se inscrever no canal do youtube, curtir o vídeo, comentar e dar sugestões
+Se inscrever no canal do youtube, curtir o vídeo, comentar e dar sugestões.

@@ -11,7 +11,7 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
-title: Kindelia University
+title: Kindelia Foundation 
 hideInToc: true
 ---
 
@@ -192,7 +192,6 @@ sudo yarn global add kind-lang
 ---
 
 # Origem do nome Kindelia
-<!-- talvez tirar slide -->
 Curiosidade
 
 Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês):
@@ -207,4 +206,6 @@ Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um 
 # Exercício
 
 * ### Instalar o kind.
+* ### Instalar code highlight do Kind
+<!-- colocar link -->
 

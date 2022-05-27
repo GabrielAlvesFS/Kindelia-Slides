@@ -11,12 +11,12 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
-title: Kindelia University
+title: Kindelia Foundation 
 ---
 
-# Types
+# Exercícios de Booleans
 
-Kindelia University
+Kindelia Foundation 
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -37,99 +37,27 @@ Kindelia University
 
 ---
 
-# Tipo Maybe
-
-```ts {all|1|1-3|}
-type Maybe{
-
-    none
-
-    some(value: type)      → O construtor some guarda um valor de algum tipo.
-
-}
-```
-
-None e Some são os contrutores do tipo Bool. 
-
-```ts {all|1|1-3|}
-                 case algo
-               /           \
-           none           some(value)
-            |                |
-           xxx              algo.value  
-```
+# a
 
 ---
 
-# Tipo MaybeBool
+# Função que recebe dois parâmetros
 
-```ts {all|1|1-3|}
-type MaybeBool{
+ Aqui vemos um exemplo: 
 
-    none
+```ts {all|2-9|3-8|3-6|4-5|8|all}
+or(a: Bool, b: Bool): Bool
+    case a{ 
+        false: case b {
+                true: Bool.true
+                false: Bool.false
+            }
 
-    some(value: Bool)      → O contrutor SOME guarda um valor, que nesse caso é do tipo Bool.
+        true: Bool.true
+    }
 
-}
-
-Obs: tipo.construtor → MaybeBool.some(Bool.false)
 ```
 
-# Exemplo:
-```ts {all|3|4-6|5-6|1-9}
-//Returns true if Maybe is none
-
-is_none(a: MaybeBool): Bool
-	 case a {
-		 none: Bool.true
-		 some: Bool.false
-}
-//is_none(MaybeBool.none)
-//return: true
-```
-
----
-
-# Tipo Pair
-
-```ts {all|1|3|1-5 }
-type Pair{
-
-	new (pair.fst , pair.snd)
-   
-}
-```
-
-O tipo Pair possui apenas um construtor.
-Esse construtor recebe dois valores. Um par de algum tipo.
+ Essa função tem o intuito de retornar ‘true’ caso alguma das entradas seja ‘true’.
 
 
----
-
-# Tipo PairBool
-
-```ts {all|1|3|1-5 }
-type PairBool{
-
-	new (fst: Bool, snd: Bool)
-   
-}
-```
-O contrutor NEW guarda um par de valores, que nesse caso são do tipo Bool.
-
-# Exemplo:
-
-```ts {all|2|3|3-4|5-6|7-8|2-9|all}
-// Returns true if both elements of a PairBool are identical
-eql_elements(a: PairBool): Bool 
-  case a{
-    new: case a.fst{
-		      true: a.snd
-		      false: case a.snd{
-		              true: Bool.false
-		              false: Bool.true
-      }}}
-
-//eql_elements(PairBool.new(Bool.true , Bool.true))
-//return: true
-```

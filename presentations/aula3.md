@@ -11,12 +11,12 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
-title: Kindelia University
+title: Kindelia Foundation 
 ---
 
 # Booleans
 
-Kindelia University
+Kindelia Foundation 
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -37,107 +37,235 @@ Kindelia University
 
 ---
 
-# Tipos
+# Link
 
-    Tipos são como agrupamos uma série de valores, todos os valores contidos naquele grupo pertencem àquela categoria, ou seja, são do mesmo tipo.
+alguns links úteis:
+
+[doc](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/s/MAbwOd8IAba3qXSYTi00/)
+
+
+Todos os tipos estão em: [kind/base](https://github.com/Kindelia/Kind/tree/master/base)
+
 
 ---
 
-# Construtores
+# Hello Kind
 
-   Construtores são feitos para guardar algum valor e ao mesmo tempo podem não guardar nenhum valor.
+Arquivo hello_kind.kind
 
----
-
-# Nessa primeira aula será apresentado o tipo Bool
-
-```ts {all|1|1-3|}
-Type Bool {
-
-    true
-
-    false
-
-}
+```ts
+hello: IO(Unit)
+  IO { 
+    IO.print("Hello, Kind!")
+  }
+  
+hello_world: IO(Unit)
+  hello
 ```
 
-True e False são os contrutores do tipo Bool.
-
-Construtores como true e false do tipo Bool por si só não possuem nenhum significado, é apenas um nome, somente quando você escreve funções para atribuir esses valores do que é "true" e o que é "falso" para eles, é quando eles irão trabalhar da maneira que queremos que funcione.
-
----
-
-# Functions
-
-Funções dão vida aos tipos e construtores que criamos.
-
-## Sintaxe e estrutura de uma função em Kind:
-
- funçao identidade
- f(x) = x  
- identity (a: Bool): Bool
-
-
----
-
-# Functions na prática
-
-```ts {all|1|1-3|}
-id(a:Bool): Bool
-
-    case a{
-
-        true: Bool.true
-
-        false: Bool.false
-
-    }
-
+Executar o código
+```ts
+kind hello_kind --run
 ```
 
-##### obs: utilizamos a sintaxe da seguinte forma:
- Tipo.construtor -> Bool.true 
+Saída:
+```ts
+Hello, Kind!
+```
+
 
 ---
 
 # Type Checker
+É um verificador de syntaxe
 
-#### para realizar o type check de um arquivo Kind basta rodar o comando no terminal: 
+O **type checker** é muito importante e um **ponto forte** do kind.
 
-```ts {}
+Ele checa se há algum erro de escrita no código.
 
-kind "nome_do_arquivo".kind
-
+```ts
+kind hello_kind.kind
 ```
 
- retornando -> all therms checks
- significa que a sintaxe e os types estão corretos.
+Saída:
+```bash
+hello: IO(Unit)
+hello_world: IO(Unit)
 
-#### Logo após você pode rodar o arquivo com: 
+All terms check.
+```
 
-```ts {}
+Lembrem-se de usá-lo antes de executar o código.
 
-kind "nome_do_arquivo" --run
+---
 
+
+
+# Dividindo o kind
+Simplificadamente o kind pode ser dividido em:
+
+* Tipos
+* Funções
+* Teoremas
+
+O kind é uma linguagem de sistemas de **tipos** que você escreve **funções** e pode provar **teoremas**.
+
+---
+
+# Comentários
+Comentários no código do kind
+
+Para comentar algo usa-se `//`. 
+
+Todo conteúdo da linha após `//`é desconsiderado.
+
+```ts
+hello: IO(Unit)
+  IO { 
+    IO.print("Hello, Kind!") // Um comentário
+  }
+  //Outro comentário
+hello_world: IO(Unit)
+  hello
+
+// output: Hello, Kind!
 ```
 
 ---
 
-# Função que recebe dois parâmetros
+# Types
+Algebraic Data Types
 
- Aqui vemos um exemplo: 
+**Types** é uma abreviação para **Algebric Data Types** (Haskell usa *Data*).
 
-```ts {all|2-9|3-8|3-6|4-5|8|all}
-or(a: Bool, b: Bool): Bool
-    case a{ 
-        false: case b {
-                true: Bool.true
-                false: Bool.false
-            }
+Basicamente, é como um conjunto matemático.
 
-        true: Bool.true
-    }
+Ele é usado para agrupar e definir estruturas: 
 
+
+```ts
+type Cores {
+  azul
+  vermelho
+  amarelo
+}
 ```
 
- Essa função tem o intuito de retornar ‘true’ caso alguma das entradas seja ‘true’.
+
+No **kind** tudo possui um **tipo** e ele é **imutável**.
+
+---
+
+# Constructors
+Data Constructors
+
+**Construtores** são usados para **guarda informação**, porém podem não guardar nenhuma também, nesse caso, não chamados de **nulários**.
+
+Diferentemente de variáveis que guardam valores, **os construtores são os responsáveis por gerarem os valores**.
+
+
+
+Para representar o valor de um tipo, usa-se: `tipo.construtor`.
+
+Por exemplo: `Cores.Azul`.
+
+
+---
+
+# Functions
+Os tipos por si só, não possuem significado, servem apenas para serem usados nas funções.
+
+As **funções** são as reponsáveis por darem **sentido** aos **tipos**.
+
+### Declaração de uma função chamada **id**
+
+```ts
+id(a: Cores): Cores
+```
+
+Se não houver variaveis use 
+
+```ts
+id: Cores
+```
+
+Mas não
+
+```ts
+id(): Cores
+```
+
+---
+
+# Tipo **Bool** E função identidade
+Tipo **Bool** é um dos tipos mais simples
+
+
+```ts
+Type Bool {
+    true
+    false
+}
+```
+
+A função identidade, simplesmente retorna o próprio valor de entrada: 
+
+```ts {1|all}
+id(a: Bool): Bool
+case a {
+  true: Bool.true
+  false: Bool.false
+  }
+```
+
+Nesta pequena função aplicamos 4 conceitos: **Função identidade**, **Tipo Bool**, **Construtores Bool.true** e **Bool.false**, e o **Comando Case**.
+
+---
+
+# Case
+O **case** é um primitivo usado para construir funções.
+
+O **case** é o principal responsável por realizar **pattern matching** dentro de **funções**.
+
+Já o **pattern matching** é um mecanismo que identifica padrões, e apenas quando iguais, 
+o código seguinte é executado.
+
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+C{case b}
+C -->|true| D[Bool.true]
+C -->|false| E[Bool.false]
+```
+
+
+---
+
+
+# Goal
+
+```ts
+?goal
+```
+
+
+
+---
+
+# Função identidade resumida 
+
+---
+
+# Exercícios
+
+* Função Negação
+* Função AND: 
+
+| A   | B   | A AND B |
+| --- | --- | --- |
+| true | true | true |
+| true | false | false |
+| false | true | false |
+| false | false | false |
+
+
