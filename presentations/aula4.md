@@ -48,6 +48,68 @@ case a {
   }
 ```
 
+---
+
+# Função AND
+Relembrando a tabela verdade 
+
+| A   | B   | A AND B |
+| --- | --- | --- |
+| true | true | true |
+| true | false | false |
+| false | true | false |
+| false | false | false |
+
+---
+
+# Função AND
+Para contruí a função **AND** será necessário 2 **cases**
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+C{case a}
+C -->|true| D[Bool.true]
+C -->|false| E[Bool.false]
+```
+
+---
+
+# Função AND
+O código ficará da seguinte forma: 
+
+```ts {all}
+and(a: Bool, b: Bool): Bool
+case a {
+  true: case b {
+    true: Bool.true
+    false: Bool.false
+  }
+  false: case b {
+    true: Bool.false
+    false: Bool.false
+  }
+}
+```
+
+---
+
+# Função AND
+Simplificando o **case false**
+
+```ts {all}
+and(a: Bool, b: Bool): Bool
+case a {
+  true: case b {
+    true: Bool.true
+    false: Bool.false
+  }
+  false: case b {
+    true: Bool.false
+    false: Bool.false
+  }
+}
+```
+
 
 ---
 

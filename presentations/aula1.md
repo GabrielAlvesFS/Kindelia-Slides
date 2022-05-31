@@ -102,6 +102,8 @@ Aprender linguagens funcionais do zero, ao mesmo tempo em que são criadas.
 
 O esperado é que em 6 meses, todos possam estar programando na HVM com propriedade, e desenvolvendo os mais variados sistemas.
 
+<!-- o que fazer com o espaço vazio -->
+
 ---
 
 # Abordagem das aulas

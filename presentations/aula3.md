@@ -46,6 +46,7 @@ alguns links úteis:
 
 Todos os tipos estão em: [kind/base](https://github.com/Kindelia/Kind/tree/master/base)
 
+<!-- decidir sobre espaço vazio -->
 
 ---
 
@@ -253,6 +254,7 @@ O **Goal** serve para demarcar no código onde estará uma incógnita.
 ?goal
 ```
 
+<!-- resolver espaço vazio -->
 
 
 ---
@@ -298,6 +300,7 @@ main: bool
   id(Bool.true)
 ```
 
+
 ---
 
 
@@ -318,6 +321,12 @@ Type checker:
 
 ```ts
 kind main --run
+```
+
+Executar código:
+
+```ts {all}
+kind main.kind
 ```
 
 ---
