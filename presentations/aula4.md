@@ -37,7 +37,17 @@ Kindelia Foundation
 
 ---
 
-# a
+# Função negação
+Inverte o valor recebido
+
+```ts {all}
+id(a: Bool): Bool
+case a {
+  true: Bool.false
+  false: Bool.true
+  }
+```
+
 
 ---
 

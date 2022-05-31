@@ -233,7 +233,7 @@ o código seguinte é executado.
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-C{case b}
+C{case a}
 C -->|true| D[Bool.true]
 C -->|false| E[Bool.false]
 ```
@@ -243,6 +243,11 @@ C -->|false| E[Bool.false]
 
 
 # Goal
+Incógnita
+
+O **Goal** serve para demarcar no código onde estará uma incógnita.
+
+É útil o **goal** pois o **type checker** informa o **tipo** e o **contexto** da variável esperada.  
 
 ```ts
 ?goal
@@ -253,6 +258,67 @@ C -->|false| E[Bool.false]
 ---
 
 # Função identidade resumida 
+Observação sobre a função identidade
+
+Como nós vimos, a função identidade é definida da seguinte forma:
+
+```ts {all}
+id(a: Bool): Bool
+case a {
+  true: Bool.true
+  false: Bool.false
+  }
+```
+
+Uma outra forma de representá-la é a seguinte:
+
+```ts {all}
+id(a: Bool): Bool
+a
+```
+
+Desta forma, ficando muito mais resumida, porém só é possível reduzir tanto por se tratar da função identidade, que **retorna o próprio valor que recebe**.
+
+---
+
+# Testando as funções 
+Como testar as funções criadas 
+
+Ao final do arquivo, coloque o seguinte:
+
+```ts
+nome_do_arquivo: tipo_da_função
+  nome_da_função(parâmetro_da_função)
+```
+
+Por exemplo:
+
+```ts
+main: bool
+  id(Bool.true)
+```
+
+---
+
+
+# Finalizando
+Executando o código completo da aula
+
+Em um arquivo chamado **main.kind**, coloque:
+
+```ts {all}
+id(a: Bool): Bool
+case a {
+  true: Bool.true
+  false: Bool.false
+  }
+```
+
+Type checker:
+
+```ts
+kind main --run
+```
 
 ---
 
