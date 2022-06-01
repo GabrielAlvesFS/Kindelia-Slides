@@ -42,7 +42,7 @@ Kindelia Foundation
 hideInToc: true
 ---
 
-# O que será ensinado nesta aula
+# Índice
 
 <Toc columns="1" />
 
@@ -206,7 +206,5 @@ Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um 
 # Exercício
 
 * ### Instalar o kind.
-* ### Instalar code highlight do Kind (
-[VSCode](https://marketplace.visualstudio.com/items?itemName=NaUwUEhSaviUwU.kind-syntax) |
-[Vim](https://github.com/samueldurantes/vim-kind))
+* ### Instalar code highlight do Kind ([VSCode](https://marketplace.visualstudio.com/items?itemName=NaUwUEhSaviUwU.kind-syntax) | [Vim](https://github.com/samueldurantes/vim-kind))
 

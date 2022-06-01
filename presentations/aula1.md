@@ -112,7 +112,7 @@ As aulas serão inicialmente direcionadas para a turma, contudo o objetivo é qu
 
 Ao final da aula será passado exercícios.
 
-### Aula síncrona
+### Aula síncrona:
 
 Para tirar dúvidas e discutir exercícios.
 
@@ -162,7 +162,7 @@ Estaremos nos organizando para entrar em contato com a turma, acompanharmos o de
 * Semana 5: Recursion;
 * Semana 6: Parsing, TypeClass;
 * Semana 7: Monad;
-* Semana 8 Io. -> projeto final: app;
+* Semana 8 IO -> projeto final: app;
 
 ---
 
