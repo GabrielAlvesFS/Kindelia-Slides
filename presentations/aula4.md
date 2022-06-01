@@ -40,6 +40,8 @@ Kindelia Foundation
 # Função negação
 Inverte o valor recebido
 
+Sem muito mistério, a função negação é simplesmente o **oposto** da **função identidade**:
+
 ```ts {all}
 id(a: Bool): Bool
 case a {
@@ -63,73 +65,79 @@ Relembrando a tabela verdade
 ---
 
 # Função AND
-Para contruí a função **AND** será necessário 2 **cases**
+Para contruí a função **AND** serão necessários 2 **cases**
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-C{case a}
-C -->|true| D[Bool.true]
-C -->|false| E[Bool.false]
+```mermaid {theme: 'dark', loglevel: 1, flowchart:{ useMaxWidth: true }}
+flowchart LR
+caseA{case a} -- true ---> caseB1{case b}
+caseB1 -- true ---> c1(Bool.true)
+caseB1 -- false ---> c2(Bool.false)
+
+caseA -- false ---> caseB2{case b}
+caseB2 -- true ---> c3(Bool.false)
+caseB2 -- false ---> c4(Bool.false)
+
 ```
 
+<!-- completar diagrama -->
 ---
 
 # Função AND
-O código ficará da seguinte forma: 
+Código para a função AND
 
-```ts {all}
+```ts {1-6,9-12,14|1-6,13-14|1-2,7,13-14|1-2,8,13-14}
 and(a: Bool, b: Bool): Bool
 case a {
   true: case b {
     true: Bool.true
     false: Bool.false
   }
+  true: id(b)
+  true: b
   false: case b {
     true: Bool.false
     false: Bool.false
   }
+  false: Bool.false
 }
 ```
 
 ---
 
-# Função AND
-Simplificando o **case false**
+
+# Case A B
+O case possui a opção de receber dois parâmetros
 
 ```ts {all}
 and(a: Bool, b: Bool): Bool
-case a {
-  true: case b {
-    true: Bool.true
-    false: Bool.false
-  }
-  false: case b {
-    true: Bool.false
-    false: Bool.false
-  }
+case a b {
+  true true: true
+  true false: false
+  false true: false
+  false false: false
 }
 ```
 
+Deve-se ter cuidado com esta abordagem, e de preferência evitá-la, pois é fácil confundir-se em casos mais complicados.
 
 ---
 
-# Função que recebe dois parâmetros
+# Opção Default
+Reduzindo o código
 
- Aqui vemos um exemplo: 
+Podemos simplificar mais o código, utilizando a opção default:
 
-```ts {all|2-9|3-8|3-6|4-5|8|all}
-or(a: Bool, b: Bool): Bool
-    case a{ 
-        false: case b {
-                true: Bool.true
-                false: Bool.false
-            }
-
-        true: Bool.true
-    }
-
+```ts {1-7|1-3,8}
+and(a: Bool, b: Bool): Bool
+case a b {
+  true true: true
+  true false: false
+  false true: false
+  false false: false
+}
+} default Bool.false
 ```
 
- Essa função tem o intuito de retornar ‘true’ caso alguma das entradas seja ‘true’.
+Desta forma para todas as entradas que não forem `true true`, ela retornará `Bool.false`.
 
 

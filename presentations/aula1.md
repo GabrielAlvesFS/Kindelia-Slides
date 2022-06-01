@@ -58,7 +58,7 @@ hideInToc: true
 
 ---
 layout: image
-image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko.png'
+image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko-dark.png'
 ---
 <!-- ajeitar imagem -->
 ---
