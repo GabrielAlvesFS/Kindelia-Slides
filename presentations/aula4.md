@@ -42,7 +42,7 @@ hideInToc: true
 
 # Índice 
 
-<Toc columns="2" />
+<Toc columns="1" />
 
 ---
 
