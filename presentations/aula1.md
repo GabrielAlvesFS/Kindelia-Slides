@@ -45,22 +45,27 @@ hideInToc: true
 
 ---
 
-
 # O [Kindelia](http://kindelia.org/)
  
+
  É uma máquina virtual descentralizada equipada com tecnologia blockchain.
+ 
 
  Seu objetivo é resolver o [trilema do triângulo de Zooko](https://en.wikipedia.org/wiki/Zooko%27s_triangle): 
 
-- Decentralizado → [Kindelia](https://github.com/Kindelia/Kindelia): Computador funcional descentralizado.
-- Eficiente (Barato e Rápido)  → [HVM](https://github.com/kindelia/hvm): Máquina virtual funcional, paralela e ótima.
-- Segurança  → [Kind](https://github.com/Kindelia/Kind): Linguagens de programação com provas formais.
+![](https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko-dark.png)
 
----
-layout: image
-image: 'https://raw.githubusercontent.com/Kindelia/slides/main/img/zooko-dark.png'
----
-<!-- ajeitar imagem -->
+- **Eficiente** (Barato e Rápido)  → [HVM](https://github.com/kindelia/hvm): Máquina virtual funcional, paralela e ótima.
+- **Segurança**  → [Kind](https://github.com/Kindelia/Kind): Linguagem de programação com provas formais.
+- **Descentralizado** → [Kindelia](https://github.com/Kindelia/Kindelia): Computador funcional descentralizado.
+
+<style>
+img {
+  width: 57%;
+  position: relative;
+  float: right; 
+}
+</style>
 ---
 
 
@@ -218,7 +223,7 @@ layout: center
 
 Dar um olhada em:
 
-* [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home);
+* [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/s/MAbwOd8IAba3qXSYTi00/);
 * [Class](https://github.com/Kindelia/class);
 * [Slides](https://github.com/Kindelia/slides);
 * [Youtube](https://www.youtube.com/c/Kindelia).

@@ -35,6 +35,18 @@ Kindelia Foundation
   </a>
 </div>
 
+
+---
+hideInToc: true
+---
+
+# Índice 
+
+<Toc columns="2" />
+
+---
+
+
 ---
 
 # Função negação

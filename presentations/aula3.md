@@ -36,17 +36,12 @@ Kindelia Foundation
 </div>
 
 ---
+hideInToc: true
+---
 
-# Link
+# Índice 
 
-alguns links úteis:
-
-[doc](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/s/MAbwOd8IAba3qXSYTi00/)
-
-
-Todos os tipos estão em: [kind/base](https://github.com/Kindelia/Kind/tree/master/base)
-
-<!-- decidir sobre espaço vazio -->
+<Toc columns="2" />
 
 ---
 
@@ -139,9 +134,8 @@ Algebraic Data Types
 
 **Types** é uma abreviação para **Algebric Data Types** (Haskell usa *Data*).
 
-Basicamente, é como um conjunto matemático.
-
-Ele é usado para agrupar e definir estruturas: 
+Basicamente, é como um **conjunto matemático**, 
+é utilizado para agrupar e definir estruturas: 
 
 
 ```ts
@@ -152,8 +146,10 @@ type Cores {
 }
 ```
 
-
 No **kind** tudo possui um **tipo** e ele é **imutável**.
+
+A definição dos tipos nos **kind** pode ser encontrado no repositório [kind/base](https://github.com/Kindelia/Kind/tree/master/base)
+
 
 ---
 
@@ -226,19 +222,28 @@ Nesta pequena função aplicamos 4 conceitos: **Função identidade**, **Tipo Bo
 # Case
 O **case** é um primitivo usado para construir funções.
 
+```mermaid {theme: 'dark', scale: 0.8}
+flowchart TD
+C{case a}
+C -->|true| D(Bool.true)
+C -->|false| E(Bool.false)
+```
+
 O **case** é o principal responsável por realizar **pattern matching** dentro de **funções**.
 
 Já o **pattern matching** é um mecanismo que identifica padrões, e apenas quando iguais, 
 o código seguinte é executado.
 
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-C{case a}
-C -->|true| D[Bool.true]
-C -->|false| E[Bool.false]
-```
 
+
+<style>
+.mermaid {
+  width: 30%;
+  position: relative;
+  float: right; 
+}
+</style>
 
 ---
 
@@ -259,7 +264,7 @@ O **Goal** serve para demarcar no código onde estará uma incógnita.
 
 ---
 
-# Função identidade resumida 
+# Função identidade simplificada 
 Observação sobre a função identidade
 
 Como nós vimos, a função identidade é definida da seguinte forma:
@@ -300,9 +305,7 @@ main: bool
   id(Bool.true)
 ```
 
-
 ---
-
 
 # Finalizando
 Executando o código completo da aula
