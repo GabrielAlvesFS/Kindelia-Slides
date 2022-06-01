@@ -46,9 +46,6 @@ hideInToc: true
 
 ---
 
-
----
-
 # Função negação
 Inverte o valor recebido
 
@@ -64,7 +61,7 @@ case a {
 
 ---
 
-# Função AND
+# Tabela Verdade do AND
 Relembrando a tabela verdade 
 
 | A   | B   | A AND B |
@@ -76,8 +73,8 @@ Relembrando a tabela verdade
 
 ---
 
-# Função AND
-Para contruí a função **AND** serão necessários 2 **cases**
+# Árvore da Função AND
+Para construir a função **AND** serão necessários 2 **cases**
 
 ```mermaid {theme: 'dark', loglevel: 1, flowchart:{ useMaxWidth: true }}
 flowchart LR
@@ -91,7 +88,6 @@ caseB2 -- false ---> c4(Bool.false)
 
 ```
 
-<!-- completar diagrama -->
 ---
 
 # Função AND

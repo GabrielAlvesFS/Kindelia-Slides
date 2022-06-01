@@ -84,48 +84,37 @@ Criação de ecossistema:
 
 # Objetivo  das aulas
 
-#### Objetivo Geral
+#### Objetivo Geral:
+* Que a turma e interessados aprendam a desenvolver em Kind e HVM para contribuir com o ecossistema.
 
-* Treinar a turma e interessados para a construção do Kind, HVM e do ecossistema.
+O desafio será aprender sobre linguagens funcionais ao mesmo tempo em que são criadas.
 
-As aulas serão inicialmente direcionadas para a turma, contudo o objetivo é que sirva para qualquer um interessado aprender por conta própria.
+#### Objetivos específicos para a turma:
+* Resolver as listas de exercícios.
+* Dar feedbacks sobre as aulas para que façamos o melhor conteúdo possível.
+* Contribuir com os repositórios [Kind](https://github.com/Kindelia/Kind), 
+[Kind2](https://github.com/Kindelia/Kind2), [HVM](https://github.com/kindelia/hvm),
+[prelude](https://github.com/Kindelia/prelude),
+com a  [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/s/MAbwOd8IAba3qXSYTi00/)
+e com os demais projetos.
 
-#### Objetivos específicos para a turma
-
-* Contribuir com o repositório [prelude](https://github.com/Kindelia/prelude).
-* Desenvolver documentações para o [Kind](https://github.com/Kindelia/Kind), [Kind2](https://github.com/Kindelia/Kind2) e [HVM](https://github.com/kindelia/hvm).
-* Desenvolver a [Wiki](https://app.gitbook.com/o/f5pmVKXE0zdcMOu6WXHf/home).
-* Dar feedbacks sobre as aulas para que possamos fazer o melhor conteúdo possível.
-* Resolver todas as listas de exercícios.
-
-
----
-
-# O desafio
-
-Aprender linguagens funcionais do zero, ao mesmo tempo em que são criadas.
-
-O esperado é que em 6 meses, todos possam estar programando na HVM com propriedade, e desenvolvendo os mais variados sistemas.
-
-<!-- o que fazer com o espaço vazio -->
 
 ---
 
 # Abordagem das aulas
-
 Cada assunto será dividido em duas partes:
 
-
-#### Aula teórica pré-gravada com o conteúdo
+### Aula teórica pré-gravada com o conteúdo:
 
 Onde vocês poderão acelerar, pausar, voltar e assistir no momento que preferirem. 
 
+As aulas serão inicialmente direcionadas para a turma, contudo o objetivo é que sirva para qualquer um interessado em aprender por conta própria.
+
 Ao final da aula será passado exercícios.
 
-#### Aula síncrona
+### Aula síncrona
 
-Onde os alunos darão feedbacks sobre a aula teórica, tirarão dúvidas, discutirão os exercícios, compararão os resultados, compartilharão materiais e resolverão problemas em tempo real.
-
+Para tirar dúvidas e discutir exercícios.
 
 ---
 

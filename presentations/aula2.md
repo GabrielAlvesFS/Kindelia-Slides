@@ -71,7 +71,7 @@ Cada entrada de função resulta sempre numa mesma saída, assim, evita-se ao m�
 
 Tornando-a em relação a programação **imperativa**, mais:
 * **Eficiente** em grandes projetos: Pois facilita o **processamento em paralelo** e a **reutilização de funções** sem reprocessamento;
-* **Confiável**: Pode-se usar de **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final também costuma ser  mais simples e legível.
+* **Confiável**: Pode-se usar **provas formais**, onde prova-se matematicamente que um código comporta-se como esperado. O código final também costuma ser  mais simples e legível.
 
 ---
 
@@ -128,7 +128,6 @@ int factorial (int n){
 ::right::
 
 # Haskell
-<!-- colocar em kind -->
 Linguagem de programação **funcional**
 
 ```haskell
@@ -162,7 +161,7 @@ Outras (multiparadigmas):
 # O que falta nas linguagens de programação funcionais atuais?
 Por que criar o kind?
 
-Não há nenhuma nenhuma linguagem de programação funcional atualmente que possua todos os requisitos do **kind**,
+Não há nenhuma linguagem de programação funcional atualmente que possua todos os requisitos do **kind**,
 e todos são indispensáveis, pois:
 
 * **Provas formais** nativas: 
@@ -177,6 +176,7 @@ A linguagem precisa ser acessível, para que não fique restrita a meios acadêm
 ---
 
 # Como instalar o Kind
+Execute uma das seguintes linhas de código no seu terminal:
 
 ```bash
 sudo npm i -g kind-lang
@@ -194,7 +194,7 @@ sudo yarn global add kind-lang
 # Origem do nome Kindelia
 Curiosidade
 
-Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em ingês):
+Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um "tipo" (***type*** em inglês):
 
 * ***1*** é do tipo ***nat***; ***True*** é do tipo ***bool***;
 * ***Nat*** e ***bool*** são do tipo [**type**](https://en.wikipedia.org/wiki/Type_constructor);
@@ -206,6 +206,7 @@ Na [teoria dos tipos](https://en.wikipedia.org/wiki/Type_theory) tudo possui um 
 # Exercício
 
 * ### Instalar o kind.
-* ### Instalar code highlight do Kind
-<!-- colocar link -->
+* ### Instalar code highlight do Kind (
+[VSCode](https://marketplace.visualstudio.com/items?itemName=NaUwUEhSaviUwU.kind-syntax) |
+[Vim](https://github.com/samueldurantes/vim-kind))
 

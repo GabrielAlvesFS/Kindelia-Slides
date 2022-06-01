@@ -73,7 +73,7 @@ Hello, Kind!
 ---
 
 # Type Checker
-É um verificador de syntaxe
+É um verificador de sintaxe
 
 O **type checker** é muito importante e um **ponto forte** do kind.
 
@@ -148,7 +148,7 @@ type Cores {
 
 No **kind** tudo possui um **tipo** e ele é **imutável**.
 
-A definição dos tipos nos **kind** pode ser encontrado no repositório [kind/base](https://github.com/Kindelia/Kind/tree/master/base)
+A definição dos tipos nos **kind** pode ser encontrado no repositório [kind/base](https://github.com/Kindelia/Kind/tree/master/base).
 
 
 ---
@@ -156,7 +156,7 @@ A definição dos tipos nos **kind** pode ser encontrado no repositório [kind/b
 # Constructors
 Data Constructors
 
-**Construtores** são usados para **guarda informação**, porém podem não guardar nenhuma também, nesse caso, não chamados de **nulários**.
+**Construtores** são usados para **guarda informação**, porém podem não guardar nenhuma também, nesse caso, são chamados de **nulários**.
 
 Diferentemente de variáveis que guardam valores, **os construtores são os responsáveis por gerarem os valores**.
 
@@ -172,7 +172,7 @@ Por exemplo: `Cores.Azul`.
 # Functions
 Os tipos por si só, não possuem significado, servem apenas para serem usados nas funções.
 
-As **funções** são as reponsáveis por darem **sentido** aos **tipos**.
+As **funções** são as responsáveis por darem **sentido** aos **tipos**.
 
 ### Declaração de uma função chamada **id**
 
@@ -180,13 +180,13 @@ As **funções** são as reponsáveis por darem **sentido** aos **tipos**.
 id(a: Cores): Cores
 ```
 
-Se não houver variaveis use 
+Se não houver variáveis use:
 
 ```ts
 id: Cores
 ```
 
-Mas não
+Mas não:
 
 ```ts
 id(): Cores
@@ -253,19 +253,27 @@ Incógnita
 
 O **Goal** serve para demarcar no código onde estará uma incógnita.
 
-É útil o **goal** pois o **type checker** informa o **tipo** e o **contexto** da variável esperada.  
-
-```ts
-?goal
+```ts {all}
+id(a: Bool): Bool
+case a {
+  true: true
+  false: ?goal
+  }
 ```
 
-<!-- resolver espaço vazio -->
+O **goal** é útil pois o **type checker** informa o **tipo** e o **contexto** esperado: 
 
+```
+Goal ?goal:
+With type: Bool
+With context:
+- b: Bool
+```
 
 ---
 
 # Função identidade simplificada 
-Observação sobre a função identidade
+Redução da função identidade
 
 Como nós vimos, a função identidade é definida da seguinte forma:
 
@@ -318,17 +326,15 @@ case a {
   true: Bool.true
   false: Bool.false
   }
+
+main: bool
+  id(Bool.true)
 ```
 
-Type checker:
+Type checker e executar:
 
 ```ts
 kind main --run
-```
-
-Executar código:
-
-```ts {all}
 kind main.kind
 ```
 
